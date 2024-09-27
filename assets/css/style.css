@@ -29,9 +29,18 @@ header {
     box-shadow: 0 3px 4px yellow;
 }
 
+/*header text*/
+header a {
+    text-decoration: none;
+    color: inherit;
+}
+
 /*logo text*/
 h1 {
     font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgb(43, 161, 161);
 }
 
 /* main content */
