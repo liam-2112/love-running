@@ -5,17 +5,28 @@
     box-sizing: border-box;
 }
 
+/*general styles*/
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /*generic project styles*/
+    color: black;
+}
+
 /* header */
 header {
     background-color: gold;
 }
 
 /* main content */
-header {
+main {
     background-color: black;
+    /*make the main element take up surplus space to push down the footer*/
+    flex: 1 0 auto;
 }
 
 /* footer */
-header {
+footer {
     background-color: gold;
 }
