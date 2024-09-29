@@ -27,6 +27,9 @@ header {
     z-index: 99;
     width: 100%;
     box-shadow: 0 3px 4px yellow;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 /*header links text*/
@@ -56,6 +59,18 @@ h1 {
 
 .active {
     border-bottom: 1px solid #ffffff;
+}
+
+/*navbar styles with dropdown toggle*/
+nav {
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    left: 0;
+    padding: 0 1rem;
+    box-shadow: 0 2px 3px yellow;
+    display: none;
+
 }
 
 /* main content */
