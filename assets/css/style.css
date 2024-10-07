@@ -53,7 +53,7 @@ h1 {
     list-style-type: none;
 }
 
-#menu > li {
+#menu>li {
     margin-bottom: 1em;
 }
 
@@ -99,8 +99,24 @@ footer {
     background-color: gold;
 }
 
+/*footer social media links*/
+#social-networks {
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+#social-networks i {
+    font-size: 160%;
+    padding: 5%;
+    color: teal;
+}
+
 /*Media query: tablets and larger (769px and up)*/
-@media screen and (min-width:768px){
+@media screen and (min-width:768px) {
+
     /*header*/
     nav {
         display: block;
@@ -115,7 +131,7 @@ footer {
         display: flex;
     }
 
-    #menu > li {
+    #menu>li {
         padding-left: 1rem;
     }
 
