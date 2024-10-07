@@ -70,7 +70,20 @@ nav {
     padding: 0 1rem;
     box-shadow: 0 2px 3px yellow;
     display: none;
+    top: 100%;
+}
 
+/*nav toggle*/
+#nav-toggle:checked~nav {
+    display: block;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    font-size: 2rem;
 }
 
 /* main content */
@@ -78,6 +91,7 @@ main {
     background-color: black;
     /*make the main element take up surplus space to push down the footer*/
     flex: 1 0 auto;
+    margin-top: 47px;
 }
 
 /* footer */
