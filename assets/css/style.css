@@ -98,3 +98,40 @@ main {
 footer {
     background-color: gold;
 }
+
+/*Media query: tablets and larger (769px and up)*/
+@media screen and (min-width:768px){
+    /*header*/
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+        background-color: gold;
+    }
+
+    #menu {
+        display: flex;
+    }
+
+    #menu > li {
+        padding-left: 1rem;
+    }
+
+    .nav-toggle-label {
+        display: none;
+    }
+
+    #logo {
+        font-size: 290%;
+        line-height: 75px;
+        margin: 0 0.5rem;
+    }
+
+    /*Main Content*/
+    main {
+        /*push main content down to accomodate for larger screen sizes*/
+        margin-top: 79px;
+    }
+}
