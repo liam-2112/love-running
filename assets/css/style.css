@@ -27,6 +27,10 @@ h1, h2, h3 {
     color: rgb(43, 161, 161);
 }
 
+.hidden-heading {
+    display: none;
+}
+
 /* header */
 header {
     background-color: gold;
