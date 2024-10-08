@@ -222,6 +222,14 @@ footer {
     color: teal;
 }
 
+/* Media query: large or landscape phones (576px and up) */
+@media screen and (min-width: 576px) {
+    #photos {
+        column-count: 2;
+        column-gap: 0;
+    }
+}
+
 /*Media query: tablets and larger (769px and up)*/
 @media screen and (min-width:768px) {
 
@@ -266,6 +274,7 @@ footer {
     }
 }
 
+
 /*Reasons Section*/
 #benefits-physical, #benefits-mental {
     display: flex;
@@ -282,6 +291,11 @@ footer {
     align-self: flex-end;
 }
 
+/*Gallery*/
+#photos {
+    column-count: 3;
+}
+
 
 /*Larger devices (laptops and desktops, 992px and up)*/
 @media screen and (min-width: 992px) {
@@ -292,6 +306,11 @@ footer {
 
     #menu a:hover {
         border-bottom: 1px solid rgb(123, 123, 123);
+    }
+
+    /*Gallery*/
+    #photos {
+        column-count: 4;
     }
 }
 
