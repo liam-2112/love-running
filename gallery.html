@@ -11,11 +11,11 @@
     <!--browser title-->
     <title>Love Running</title>
     <!--browser icon-->
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
     <!--stylesheet-->
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
@@ -24,7 +24,7 @@
     <header>
 
         <!--logo-->
-        <a href="/index.html">
+        <a href="index.html">
             <h1 id="logo">Love Running</h1>
         </a>
 
@@ -37,10 +37,10 @@
         <!--nav bar-->
         <nav>
             <ul id="menu">
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/pages/gallery.html">Gallery</a></li>
+                <li><a href="index.html">Home</a></li>
                 <!--Current open page-->
-                <li><a href="/pages/signup.html" class="active">Sign Up</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
             </ul>
         </nav>
 
@@ -48,34 +48,20 @@
 
     <!--main content-->
     <main>
-        <section id="signup">
-            <form id="signup-form" method="POST" action="https://formdump.codeinstitute.net">
-                <h2><i class="fa-solid fa-heartbeat"></i>Lets Get You Signed Up!</h2>
-                <label for="first-name">First Name</label>
-                <input type="text" name="first_name" id="first-name" class="text-input" required>
-                <br>
-                <label for="last-name">Last Name</label>
-                <input type="text" name="last_name" id="last-name" class="text-input" required>
-                <br>
-                <label for="email-address">Email Address</label>
-                <input type="email" name="email_address" id="email-address" class="text-input" required>
-                <br>
-                <div class="radio-buttons">
-                    <div>
-                        <label for="road">Road</label>
-                        <input type="radio" name="running_preference" id="road" value="road" required checked>
-                    </div>
-                    <div>
-                        <label for="trail">Trail</label>
-                        <input type="radio" name="running_preference" id="trail" value="trail" required>
-                    </div>
-                    <div>
-                        <label for="both">Both</label>
-                        <input type="radio" name="running_preference" id="both" value="both" required>
-                    </div>
-                </div>
-                <button type="submit" class="join-button">Let's Run!</button>
-            </form>
+        <section id="gallery">
+            <div id="photos">
+                <img src="assets/images/athletes.webp" alt="Two athletes running together">
+                <img src="assets/images/girls.webp" alt="Three girls at charity paint running festival">
+                <img src="assets/images/runner3.webp" alt="Solo male runner jogging on beach">
+                <img src="assets/images/man.webp" alt="Man at charity paint running festival">
+                <img src="assets/images/runner1.webp" alt="Solo female runner jogging through Phoenix Park">
+                <img src="assets/images/runner2.webp" alt="Runners competing in marathon">
+                <img src="assets/images/runner4.webp" alt="Solo female runner jogging on beach">
+                <img src="assets/images/running_gang.webp"
+                    alt="Large group of runners taking part in a marathon on a rainy day">
+                <img src="assets/images/mud-run.webp"
+                    alt="Two women runners taking a muddy selfie after the Mud Runners championship">
+            </div>
         </section>
     </main>
 
