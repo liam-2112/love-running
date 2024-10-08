@@ -1,60 +1,58 @@
-/*google font imports*/
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200..700&display=swap');
+/* Google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
-/*asterisk wildcard selector to override default styles added by the browser*/
+/* Asterisk wildcard selector to override default styles added by the browser */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-/*general styles*/
+/* General styles */
 body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    /*generic project styles*/
-    color: black;
+    /* Generic project styles */
+    color: #000000;
     font-family: 'Lato', sans-serif;
 }
 
-/*logo text*/
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: rgb(43, 161, 161);
+    color: #23a2a2;
 }
 
 .hidden-heading {
     display: none;
 }
 
-/* header */
+/* Header */
 header {
     background-color: gold;
     padding: 0 1rem;
     position: fixed;
     z-index: 99;
     width: 100%;
-    box-shadow: 0 3px 4px yellow;
+    box-shadow: 0 2px 2px rgb(97, 87, 31);
     display: flex;
     justify-content: space-between;
     align-items: baseline;
 }
 
-/*header links text*/
 header a {
     text-decoration: none;
+    font-weight: bold;
     color: inherit;
 }
 
-
-/*navigation bar*/
 #menu {
     font-size: 110%;
-    initial-letter: 4px;
+    letter-spacing: 4px;
     list-style-type: none;
 }
 
@@ -63,24 +61,25 @@ header a {
 }
 
 .active {
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 1px solid #3a3a3a;
 }
 
-/*navbar styles with dropdown toggle*/
+/* Navbar styles with dropdown toggle */
 nav {
     position: absolute;
-    background-color: #ffffff;
+    background-color: gold;
     width: 100%;
     left: 0;
     padding: 0 1rem;
-    box-shadow: 0 2px 3px yellow;
+    box-shadow: 0 2px 2px rgb(97, 87, 31);
     display: none;
     top: 100%;
 }
 
-/*nav toggle*/
+/* Nav toggle */
 #nav-toggle:checked~nav {
     display: block;
+    background-color: black;
 }
 
 #nav-toggle {
@@ -91,28 +90,28 @@ nav {
     font-size: 2rem;
 }
 
-/* main content */
+/* Main content */
 main {
-    background-color: black;
-    /*make the main element take up surplus space to push down the footer*/
+    /* Enlarge main element to push footer down*/
     flex: 1 0 auto;
-    /*Stops content being covered*/
+    /* Add margin at the top to prevent content from being covered by the header */
     margin-top: 47px;
     /* Enable flex properties for child elements */
     display: flex;
     flex-direction: column;
 }
 
+/* Hero section */
 #hero {
     height: 600px;
     width: 100%;
-    background: url("../images/hero-image.webp") no-repeat center center / cover;
+    background: url("../images/hero-image.webp") no-repeat center center/cover;
     position: relative;
 }
 
 #cover-text {
-    /*final rgb sets opacity*/
-    background-color: rgba(58, 59, 59, 0.7);
+    /* Final rgba value sets the opacity so it is semi-transparent */
+    background-color: rgba(47, 44, 44, 0.5);
     font-size: 130%;
     position: absolute;
     bottom: 30px;
@@ -122,8 +121,9 @@ main {
     padding-left: 10px;
 }
 
-#cover-text > h2, #cover-text > h3 {
-    color: rgb(255, 255, 255);
+#cover-text>h2,
+#cover-text>h3 {
+    color: rgb(177, 158, 45);
 }
 
 /* Reasons section */
@@ -138,8 +138,8 @@ main {
     font-size: 280%;
 }
 
-#benefits-physical > div,
-#benefits-mental > div {
+#benefits-physical>div,
+#benefits-mental>div {
     line-height: 20px;
     margin-bottom: 20px;
 }
@@ -158,7 +158,7 @@ main {
     height: 90vw;
     width: 90vw;
     margin-bottom: 20px;
-    /*Makes the square image a circle*/
+    /* Makes the square image into a circle */
     border-radius: 50%;
     max-width: 300px;
     max-height: 300px;
@@ -170,33 +170,33 @@ main {
     justify-content: center;
 }
 
-/*Meet-up times section*/
+/* Meetup Times section */
 #times {
-    background: url(/assets/images/dublin-city.webp);
-    /*responsitivity without media query*/
+    background: url('../images/dublin-city.webp') no-repeat center/cover;
+    /* Handles responsivity without the need for a media query */
     display: flex;
     flex-wrap: wrap;
 }
 
 #times div {
-    color: white;
-    background-color: rgb(0, 0, 0, .6);
+    color: #fafafa;
+    background-color: rgba(0, 0, 0, .6);
     padding: 15px;
     text-align: center;
-    /*This will not wrap on screens less than 400px wide
-    Each div will expand to fill the available space on its row*/
+    /* This will not wrap on screens of less than 400px wide.
+    Each div will expand to fill the available space on its row */
     flex-basis: 200px;
     flex-grow: 1;
-    /* Creates a grid of meetup time divs over the background image */
-    border: 2px solid white;
+    /* Creates a grid of meetup time dives over the background image */
+    border: 2px solid gold;
 }
 
 #times h3 {
-    /*override the general headings style*/
-    color:  rgb(255, 255, 255);
+    /* Override the heading colour set in general styles */
+    color: #fafafa;
 }
 
-/*Gallery Page*/
+/* Gallery page */
 #photos img {
     width: 100%;
     line-height: 1em;
@@ -206,14 +206,15 @@ main {
     line-height: 0;
 }
 
-/* Form sign up page */
+/* Form */
 #signup {
-    background-image: url("/assets/images/signup-image.webp");
+    background-image: url("../images/signup-image.webp");
     background-size: cover;
     background-position: 75%;
     padding: 20px 10% 0 10%;
     flex-grow: 1;
 }
+
 
 #signup-form {
     color: #ffffff;
@@ -221,10 +222,12 @@ main {
     padding: 30px;
 }
 
+
 #signup-form>h2 {
-    color: #fafafa;
+    color: #23a2a2;
     margin-bottom: 20px;
 }
+
 
 .text-input {
     background: transparent;
@@ -232,10 +235,11 @@ main {
     width: 100%;
     height: 25px;
     margin: 5px 0 20px 0;
-    border: 1px solid #fafafa;
+    border: 1px solid #282828;
     border-radius: 2px;
     padding: 0 5px;
 }
+
 
 .radio-buttons {
     width: 100%;
@@ -243,21 +247,18 @@ main {
     justify-content: space-between;
 }
 
+
 .join-button {
     margin-top: 20px;
     border-radius: 2px;
     padding: 15px 32px;
     font-size: 100%;
-    background-color: #454b1b;
-    color: #fafafa;
-}
-
-/* footer */
-footer {
+    font-weight: bold;
     background-color: gold;
+    color: #23a2a2;
 }
 
-/*footer social media links*/
+/* Footer */
 #social-networks {
     text-align: center;
     padding: 20px 0;
@@ -269,7 +270,7 @@ footer {
 #social-networks i {
     font-size: 160%;
     padding: 5%;
-    color: teal;
+    color: gold;
 }
 
 /* Media query: large or landscape phones (576px and up) */
@@ -280,17 +281,16 @@ footer {
     }
 }
 
-/*Media query: tablets and larger (768px and up)*/
-@media screen and (min-width:768px) {
+/* Media query: tablets and larger (768px and up) */
+@media screen and (min-width: 768px) {
 
-    /*header*/
+    /* Header */
     nav {
         display: block;
         position: relative;
         box-shadow: none;
         width: fit-content;
         padding-right: 1rem;
-        background-color: gold;
     }
 
     #menu {
@@ -306,110 +306,106 @@ footer {
     }
 
     #logo {
-        font-size: 290%;
+        font-size: 280%;
         line-height: 75px;
         margin: 0 0.5rem;
     }
 
-    /*Main Content*/
+    /* Main content */
     main {
-        /*push main content down to accomodate for larger screen sizes*/
+        /* Push main content down to accommodate larger header */
         margin-top: 79px;
     }
 
-    /*hero text*/
+    /* Hero */
     #cover-text {
         width: 300px;
         right: 50px;
     }
+
+    /* Reasons section */
+    #benefits-physical,
+    #benefits-mental {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #benefits-physical>div,
+    #benefits-mental>div {
+        width: 75%;
+    }
+
+    #benefits-mental>div {
+        text-align: end;
+        align-self: flex-end;
+    }
+
+    /* Gallery */
+    #photos {
+        column-count: 3;
+    }
+
+    /* Form */
+    #signup {
+        background-position: center;
+        position: relative;
+    }
+
+    #signup-form {
+        max-width: 400px;
+        position: absolute;
+        left: 10%;
+        top: 150px;
+    }
+
+    .text-input:hover {
+        border-color: #f16c6b;
+    }
+
+    .join-button:hover {
+        background-color: #fafafa;
+        color: #454b1b;
+    }
 }
 
-
-/*Reasons Section*/
-#benefits-physical, #benefits-mental {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-#benefits-physical > div, #benefits-mental > div {
-    width: 70%;
-}
-
-#benefits-mental > div {
-    text-align: end;
-    align-self: flex-end;
-}
-
-/*Gallery*/
-#photos {
-    column-count: 3;
-}
-
-/* Form */
-#signup {
-    background-position: center;
-    position: relative;
-}
-
-#signup-form {
-    max-width: 400px;
-    position: absolute;
-    left: 10%;
-    top: 150px;
-}
-
-.text-input:hover {
-    border-color: #f16c6b;
-}
-
-.join-button:hover {
-    background-color: #fafafa;
-    color: #454b1b;
-}
-
-
-/*Larger devices (laptops and desktops, 992px and up)*/
+/* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
-
-    #menu a {
-        border-bottom: none;
-    }
-
     #menu a:hover {
-        border-bottom: 1px solid rgb(123, 123, 123);
+        border-bottom: 1px solid #3a3a3a;
     }
 
-    /*Gallery*/
+    /* Gallery */
     #photos {
         column-count: 4;
     }
 }
 
 @media screen and (min-width: 1200px) {
-    /*Reasons section*/
+
+    /* Reasons section */
     #benefits {
         display: flex;
         flex-direction: row;
     }
 
-    #benefits > div {
+    #benefits>div {
         flex: 1;
     }
 
     #benefits-image {
-        order: 0;
+        order: 0
     }
 
     #benefits-mental {
         order: 1;
     }
 
-    #benefits-mental > div {
+    #benefits-mental>div {
         align-self: flex-start;
     }
 
-    #benefits-physical > div {
+    #benefits-physical>div {
         align-self: flex-end;
     }
 }
